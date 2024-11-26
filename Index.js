@@ -1,5 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import Main from "./Main";
 
-const root = ReactDOM.render(<Main />, document.getElementById('root'));
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>
+);
